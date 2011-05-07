@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/f/Project/OpenSource/FFmpeg/svn/latest
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 52.93.0
+Requires: libavcodec = 52.108.0
+Conflicts:
+Libs: ${libdir}/libavformat.a -lavicap32 -lws2_32 -lm -lpthread -lpsapi 
+Cflags: -I${includedir}

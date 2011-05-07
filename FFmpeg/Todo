@@ -1,0 +1,9 @@
+FFmpeg_VS2008
+Todo list:
+
+- compile ffserver
+- AMRNB decoder
+- AMRWB decoder
+- support asm in VC++
+- support MMX
+- support SSE

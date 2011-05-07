@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/f/Project/OpenSource/FFmpeg/svn/latest
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 50.36.0
+Requires: 
+Conflicts:
+Libs: ${libdir}/libavutil.a 
+Cflags: -I${includedir}
