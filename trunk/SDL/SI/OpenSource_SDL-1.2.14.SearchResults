@@ -1,0 +1,35 @@
+---- SDL_main Matches (27 in 12 files) ----
+SDL.c (src):ULONG _System SDL_Main_ExceptionHandler(PEXCEPTIONREPORTRECORD pERepRec,
+SDL.c (src):      printf("[SDL_Main_ExceptionHandler] : Calling SDL_CloseAudio()!\n");
+SDL.c (src):EXCEPTIONREGISTRATIONRECORD SDL_Main_xcpthand = {0, SDL_Main_ExceptionHandler};
+SDL.c (src):    DosUnsetExceptionHandler(&SDL_Main_xcpthand);
+SDL.c (src):    DosSetExceptionHandler(&SDL_Main_xcpthand);
+SDL.h (include):#include "SDL_main.h"
+Sdllib.cpp (src\main\symbian\eka2):    return SDLEnv::SetMain(SDL_main, CSDL::EEnableFocusStop | CSDL::EAllowImageResize,
+SDL_dibevents.c (src\video\windib):#include "SDL_main.h"
+SDL_dummy_main.c (src\main\dummy):#include "SDL_main.h"
+SDL_dummy_main.c (src\main\dummy):	return(SDL_main(argc, argv));
+SDL_dx5events.c (src\video\windx5):#include "SDL_main.h"
+SDL_main.c (src\main\macos):#include "SDL_main.h"
+SDL_main.c (src\main\macos):	SDL_main(nargs, args);
+SDL_main.c (src\main\macos):	SDL_main(argc, argv);
+SDL_main.cpp (src\main\symbian\eka1):    SDL_main.cpp
+SDL_main.cpp (src\main\symbian\eka1):#define main	SDL_main
+SDL_main.cpp (src\main\symbian\eka2):    SDL_Main.cpp
+SDL_main.h (include):#ifndef _SDL_main_h
+SDL_main.h (include):#define _SDL_main_h
+SDL_main.h (include):/** @file SDL_main.h
+SDL_main.h (include):#define main	SDL_main
+SDL_main.h (include):extern C_LINKAGE int SDL_main(int argc, char *argv[]);
+SDL_main.h (include):#endif /* _SDL_main_h */
+SDL_sysevents.c (src\video\wincommon):#include "SDL_main.h"
+SDL_win32_main.c (src\main\win32):    SDL_main.c, placed in the public domain by Sam Lantinga  4/13/98
+SDL_win32_main.c (src\main\win32):#include "SDL_main.h"
+SDL_win32_main.c (src\main\win32):	status = SDL_main(argc, argv);
+---- SDL_INIT_EVENTTHREAD Matches (8 in 4 files) ----
+SDL.c (src):		                   (flags&SDL_INIT_EVENTTHREAD)) < 0 ) {
+SDL.h (include):#define SDL_INIT_EVENTTHREAD	0x01000000	/**< Not supported on all OS's */
+SDL_events.c (src\events):	if ( (flags&SDL_INIT_EVENTTHREAD) == SDL_INIT_EVENTTHREAD ) {
+SDL_video.c (src\video):	flags |= SDL_INIT_EVENTTHREAD;
+SDL_video.c (src\video):	if ( (flags & SDL_INIT_EVENTTHREAD) == SDL_INIT_EVENTTHREAD ) {
+SDL_video.c (src\video):	SDL_CursorInit(flags & SDL_INIT_EVENTTHREAD);
