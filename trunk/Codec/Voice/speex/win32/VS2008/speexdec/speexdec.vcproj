@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\..\include;..\..\..\..\libogg\include;..\..\..\libspeex;..\.."
+				AdditionalIncludeDirectories="&quot;..\..\..\speex-deps\include&quot;;..\..\..\include;..\..\..\..\libogg\include;..\..\..\libspeex;..\.."
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;HAVE_CONFIG_H"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -64,9 +64,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="winmm.lib"
+				AdditionalDependencies="libogg_static.lib winmm.lib"
 				OutputFile="$(OutDir)/speexdec.exe"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="&quot;..\..\..\speex-deps\lib\$(PlatformName)\$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/speexenc.pdb"
 				SubSystem="1"
