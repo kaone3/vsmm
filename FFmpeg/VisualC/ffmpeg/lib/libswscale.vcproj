@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\..\include;..\..\..\"
+				AdditionalIncludeDirectories="&quot;..\..\..\ffmpeg-deps\include&quot;;..\..\..\"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;__inline__=inline;inline=__inline;__restrict__=;__asm__=__asm;HAVE_AV_CONFIG_H"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"

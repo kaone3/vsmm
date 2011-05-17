@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\include"
+				AdditionalIncludeDirectories="&quot;..\..\ffmpeg-deps\include&quot;"
 				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE;__inline__=inline;inline=__inline;__restrict__=;HAVE_AV_CONFIG_H"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -64,7 +64,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="libavutil.lib libavcore.lib libavdevice.lib libavfilter.lib libswscale.lib libavformat.lib libavcodec.lib libm_common.lib libm_math.lib libc_string.lib libvsmm.lib vfw32.lib ws2_32.lib psapi.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="&quot;..\..\libvsmm\$(PlatformName)\$(ConfigurationName)&quot;;&quot;$(SolutionDir)output\lib\$(PlatformName)\$(ConfigurationName)&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\ffmpeg-deps\lib\$(PlatformName)\$(ConfigurationName)&quot;;&quot;$(SolutionDir)output\lib\$(PlatformName)\$(ConfigurationName)&quot;"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				TargetMachine="1"
