@@ -49,7 +49,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBISFILE_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="1"
+				RuntimeLibrary="3"
 				UsePrecompiledHeader="0"
 				WarningLevel="3"
 				Detect64BitPortabilityProblems="false"
@@ -533,7 +533,7 @@
 	<References>
 		<ProjectReference
 			ReferencedProjectIdentifier="{3A214E06-B95E-4D61-A291-1F8DF2EC10FD}"
-			RelativePathToProject=".\libvorbis\libvorbis_static.vcproj"
+			RelativePathToProject=".\Codec\Audio\libvorbis\win32\VS2008\libvorbis\libvorbis_static.vcproj"
 		/>
 	</References>
 	<Files>
